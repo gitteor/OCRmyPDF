@@ -121,29 +121,6 @@ Please report issues on our [GitHub issues](https://github.com/ocrmypdf/OCRmyPDF
 Python(3.7+) 외에도 OCRmyPDF는 Ghostscript와 Tesseract OCR 설치가 필요합니다. OCRmyPDF는 순수 Python으로 거의 모든 OS에서 실행됩니다. (Linux, macOS, Windows 및 FreeBSD)
 
 
-## Press & Media
-
-- [Going paperless with OCRmyPDF](https://medium.com/@ikirichenko/going-paperless-with-ocrmypdf-e2f36143f46a)
-- [Converting a scanned document into a compressed searchable PDF with redactions](https://medium.com/@treyharris/converting-a-scanned-document-into-a-compressed-searchable-pdf-with-redactions-63f61c34fe4c)
-- [c't 1-2014, page 59](https://heise.de/-2279695): Detailed presentation of OCRmyPDF v1.0 in the leading German IT magazine c't
-- [heise Open Source, 09/2014: Texterkennung mit OCRmyPDF](https://heise.de/-2356670)
-- [heise Durchsuchbare PDF-Dokumente mit OCRmyPDF erstellen](https://www.heise.de/ratgeber/Durchsuchbare-PDF-Dokumente-mit-OCRmyPDF-erstellen-4607592.html)
-- [Excellent Utilities: OCRmyPDF](https://www.linuxlinks.com/excellent-utilities-ocrmypdf-add-ocr-text-layer-scanned-pdfs/)
-- [LinuxUser Texterkennung mit OCRmyPDF und Scanbd automatisieren](https://www.linux-community.de/ausgaben/linuxuser/2021/06/texterkennung-mit-ocrmypdf-und-scanbd-automatisieren/)
-
-
-## Business enquiries
-
-OCRmyPDF would not be the software that it is today without companies and users choosing to provide support for feature development and consulting enquiries. We are happy to discuss all enquiries, whether for extending the existing feature set, or integrating OCRmyPDF into a larger system.
-
-
 ## License
 
-The OCRmyPDF software is licensed under the Mozilla Public License 2.0 (MPL-2.0). This license permits integration of OCRmyPDF with other code, included commercial and closed source, but asks you to publish source-level modifications you make to OCRmyPDF.
-
-Some components of OCRmyPDF have other licenses, as indicated by standard SPDX license identifiers or the DEP5 copyright and licensing information file. Generally speaking, non-core code is licensed under MIT, and the documentation and test files are licensed under Creative Commons ShareAlike 4.0 (CC-BY-SA 4.0).
-
-
-## Disclaimer
-
-The software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+OCRmyPDF 소프트웨어는 Mozilla Public License 2.0(MPL-2.0)에 따라 사용이 허가되었습니다. 이 라이선스는 OCRmyPDF를 상업용 및 폐쇄형 소스를 포함하는 다른 코드와 통합하는 것을 허용하지만 OCRmyPDF에 대한 소스 수준 수정 사항을 게시하도록 요청합니다.
