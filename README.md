@@ -11,7 +11,7 @@
 [docs]: https://readthedocs.org/projects/ocrmypdf/badge/?version=latest "RTD"
 [pyversions]: https://img.shields.io/pypi/pyversions/ocrmypdf "Supported Python versions"
 
-OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched or copy-pasted.
+OCRmyPDF는 스캔한 PDF 파일에 OCR 텍스트 레이어를 추가하여 검색하거나 복사 붙여넣기 할 수 있습니다.
 
 ```bash
 ocrmypdf                      # it's a scriptable command line program
@@ -25,28 +25,29 @@ ocrmypdf                      # it's a scriptable command line program
    output_searchable.pdf      # produces validated PDF output
 ```
 
-[See the release notes for details on the latest changes](https://ocrmypdf.readthedocs.io/en/latest/release_notes.html).
+[최신 변경 사항에 대한 자세한 내용은 릴리스노트에 있습니다.](https://ocrmypdf.readthedocs.io/en/latest/release_notes.html).
+
 
 ## Main features
 
-- Generates a searchable [PDF/A](https://en.wikipedia.org/?title=PDF/A) file from a regular PDF
-- Places OCR text accurately below the image to ease copy / paste
-- Keeps the exact resolution of the original embedded images
-- When possible, inserts OCR information as a "lossless" operation without disrupting any other content
-- Optimizes PDF images, often producing files smaller than the input file
-- If requested, deskews and/or cleans the image before performing OCR
-- Validates input and output files
-- Distributes work across all available CPU cores
-- Uses [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) engine to recognize more than [100 languages](https://github.com/tesseract-ocr/tessdata)
-- Keeps your private data private.
-- Scales properly to handle files with thousands of pages
-- Battle-tested on millions of PDFs
+- 일반 PDF에서 검색 가능한 [PDF/A](https://en.wikipedia.org/?title=PDF/A) 파일 생성
+- OCR 텍스트를 이미지 아래에 정확하게 배치하여 쉽게 복사/붙여넣기
+- 변환될 원본 이미지의 해상도를 원본 그대로 유지
+- 가능한 경우 다른 콘텐츠를 방해하지 않고 "무손실" 작업으로 OCR 정보를 삽입
+- PDF 이미지를 최적화하여 종종 입력 파일보다 작은 파일로 생성
+- 요청 시 OCR을 수행하기 전에 이미지 기울기 보정 가능
+- 입력 및 출력 파일의 유효성 검사
+- 사용 가능한 모든 CPU 코어에 작업 분산
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) 엔진을 사용하여 [100개 이상의 언어](https://github.com/tesseract-ocr/tessdata) 인식
+- 개인 데이터를 비공개로 유지
+- 수천 페이지의 파일을 처리할 수 있도록 적절하게 확장
+- 수백만 개의 PDF에 대한 테스트 완료
 
-For details: please consult the [documentation](https://ocrmypdf.readthedocs.io/en/latest/).
+자세한 내용은 [설명서](https://ocrmypdf.readthedocs.io/en/latest/)를 참조하세요.
 
 ## Motivation
 
-I searched the web for a free command line tool to OCR PDF files: I found many, but none of them were really satisfying:
+웹에서 OCR PDF 파일에 대한 무료 도구를 많이 찾아봤지만 그 중 어느 것도 만족스럽지 않았습니다.
 
 - Either they produced PDF files with misplaced text under the image (making copy/paste impossible)
 - Or they did not handle accents and multilingual characters
@@ -56,13 +57,14 @@ I searched the web for a free command line tool to OCR PDF files: I found many, 
 - Or they did not produce valid PDF files
 - On top of that none of them produced PDF/A files (format dedicated for long time storage)
 
-...so I decided to develop my own tool.
+...그래서 나만의 도구를 개발하기로 결정
+
 
 ## Installation
 
-Linux, Windows, macOS and FreeBSD are supported. Docker images are also available, for both x64 and ARM.
+Linux, Windows, macOS 및 FreeBSD가 지원됩니다. x64 및 ARM 모두에 대해 Docker 이미지도 사용할 수 있습니다.
 
-| Operating system              | Install command               |
+| 운영체제                       | 설치 명령어                   |
 | ----------------------------- | ------------------------------|
 | Debian, Ubuntu                | ``apt install ocrmypdf``      |
 | Windows Subsystem for Linux   | ``apt install ocrmypdf``      |
@@ -74,11 +76,12 @@ Linux, Windows, macOS and FreeBSD are supported. Docker images are also availabl
 | Conda                         | ``conda install ocrmypdf``    |
 | Ubuntu Snap                   | ``snap install ocrmypdf``     |
 
-For everyone else, [see our documentation](https://ocrmypdf.readthedocs.io/en/latest/installation.html) for installation steps.
+설치 단계에 대한 [설명서](https://ocrmypdf.readthedocs.io/en/latest/installation.html)를 참조하세요.
+
 
 ## Languages
 
-OCRmyPDF uses Tesseract for OCR, and relies on its language packs. For Linux users, you can often find packages that provide language packs:
+OCRmyPDF는 OCR에 Tesseract를 사용하고 해당 언어팩을 사용합니다. Linux 사용자의 경우 종종 언어팩을 제공하는 패키지를 필요로 합니다.
 
 ```bash
 # Display a list of all Tesseract language packs
@@ -98,6 +101,7 @@ You can then pass the `-l LANG` argument to OCRmyPDF to give a hint as to what l
 
 OCRmyPDF supports Tesseract 4.1.1+. It will automatically use whichever version it finds first on the `PATH` environment variable. On Windows, if `PATH` does not provide a Tesseract binary, we use the highest version number that is installed according to the Windows Registry.
 
+
 ## Documentation and support
 
 Once OCRmyPDF is installed, the built-in help which explains the command syntax and options can be accessed via:
@@ -110,9 +114,11 @@ Our [documentation is served on Read the Docs](https://ocrmypdf.readthedocs.io/e
 
 Please report issues on our [GitHub issues](https://github.com/ocrmypdf/OCRmyPDF/issues) page, and follow the issue template for quick response.
 
+
 ## Requirements
 
 In addition to the required Python version (3.7+), OCRmyPDF requires external program installations of Ghostscript and Tesseract OCR. OCRmyPDF is pure Python, and runs on pretty much everything: Linux, macOS, Windows and FreeBSD.
+
 
 ## Press & Media
 
@@ -124,15 +130,18 @@ In addition to the required Python version (3.7+), OCRmyPDF requires external pr
 - [Excellent Utilities: OCRmyPDF](https://www.linuxlinks.com/excellent-utilities-ocrmypdf-add-ocr-text-layer-scanned-pdfs/)
 - [LinuxUser Texterkennung mit OCRmyPDF und Scanbd automatisieren](https://www.linux-community.de/ausgaben/linuxuser/2021/06/texterkennung-mit-ocrmypdf-und-scanbd-automatisieren/)
 
+
 ## Business enquiries
 
 OCRmyPDF would not be the software that it is today without companies and users choosing to provide support for feature development and consulting enquiries. We are happy to discuss all enquiries, whether for extending the existing feature set, or integrating OCRmyPDF into a larger system.
+
 
 ## License
 
 The OCRmyPDF software is licensed under the Mozilla Public License 2.0 (MPL-2.0). This license permits integration of OCRmyPDF with other code, included commercial and closed source, but asks you to publish source-level modifications you make to OCRmyPDF.
 
 Some components of OCRmyPDF have other licenses, as indicated by standard SPDX license identifiers or the DEP5 copyright and licensing information file. Generally speaking, non-core code is licensed under MIT, and the documentation and test files are licensed under Creative Commons ShareAlike 4.0 (CC-BY-SA 4.0).
+
 
 ## Disclaimer
 
