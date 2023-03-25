@@ -104,7 +104,7 @@ OCRmyPDF supports Tesseract 4.1.1+. It will automatically use whichever version 
 
 ## Documentation and support
 
-Once OCRmyPDF is installed, the built-in help which explains the command syntax and options can be accessed via:
+OCRmyPDF가 설치되면 다음과 같이 명령어 및 옵션을 설명하는 기본 제공 도움말에 액세스할 수 있습니다.
 
 ```bash
 ocrmypdf --help
@@ -117,7 +117,7 @@ Please report issues on our [GitHub issues](https://github.com/ocrmypdf/OCRmyPDF
 
 ## Requirements
 
-In addition to the required Python version (3.7+), OCRmyPDF requires external program installations of Ghostscript and Tesseract OCR. OCRmyPDF is pure Python, and runs on pretty much everything: Linux, macOS, Windows and FreeBSD.
+필수적인 Python 버전(3.7+) 외에도 OCRmyPDF는 Ghostscript와 Tesseract OCR의 외부 프로그램 설치가 필요합니다. OCRmyPDF는 순수한 Python이며 거의 모든 OS에서 실행됩니다. (Linux, macOS, Windows 및 FreeBSD)
 
 
 ## Press & Media
