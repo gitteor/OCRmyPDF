@@ -84,22 +84,23 @@ Linux, Windows, macOS 및 FreeBSD가 지원됩니다. x64 및 ARM 모두에 대�
 OCRmyPDF는 OCR에 Tesseract를 사용하고 해당 언어팩을 사용합니다. Linux 사용자의 경우 종종 언어팩을 제공하는 패키지를 필요로 합니다.
 
 ```bash
-# Display a list of all Tesseract language packs
+# 모든 Tesseract 언어팩 목록 표시
 apt-cache search tesseract-ocr
 
-# Debian/Ubuntu users
+# 데비안/우분투 사용자
 apt-get install tesseract-ocr-chi-sim  # Example: Install Chinese Simplified language pack
 
-# Arch Linux users
+# Arch Linux 사용자
 pacman -S tesseract-data-eng tesseract-data-deu # Example: Install the English and German language packs
 
-# brew macOS users
+# brew macOS 사용자
 brew install tesseract-lang
 ```
 
-You can then pass the `-l LANG` argument to OCRmyPDF to give a hint as to what languages it should search for. Multiple languages can be requested.
+`-l LANG` 다음 인수를 OCRmyPDF에 전달하여 검색해야 하는 언어에 대한 힌트를 제공 할 수 있습니다. 여러 언어를 요청할 수 있습니다.
 
-OCRmyPDF supports Tesseract 4.1.1+. It will automatically use whichever version it finds first on the `PATH` environment variable. On Windows, if `PATH` does not provide a Tesseract binary, we use the highest version number that is installed according to the Windows Registry.
+OCRmyPDF는 Tesseract 4.1.1+를 지원합니다. 환경변수에서 먼저 찾은 버전을 자동으로 사용합니다. 
+Windows에서 Tesseract PATH를 제공하지 않는 경우, 레지스트리에 따라 설치된 가장 높은 버전 번호를 사용합니다.
 
 
 ## Documentation and support
@@ -117,7 +118,7 @@ Please report issues on our [GitHub issues](https://github.com/ocrmypdf/OCRmyPDF
 
 ## Requirements
 
-필수적인 Python 버전(3.7+) 외에도 OCRmyPDF는 Ghostscript와 Tesseract OCR의 외부 프로그램 설치가 필요합니다. OCRmyPDF는 순수한 Python이며 거의 모든 OS에서 실행됩니다. (Linux, macOS, Windows 및 FreeBSD)
+Python(3.7+) 외에도 OCRmyPDF는 Ghostscript와 Tesseract OCR 설치가 필요합니다. OCRmyPDF는 순수 Python으로 거의 모든 OS에서 실행됩니다. (Linux, macOS, Windows 및 FreeBSD)
 
 
 ## Press & Media
